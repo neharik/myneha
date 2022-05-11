@@ -1,2 +1,18 @@
 172.31.19.128
 172.31.18.241
+
+[mywebservers]
+172.31.19.128
+172.31.18.241
+
+[myubuntuserver]
+172.31.19.128
+
+[myredhatserver]
+172.31.18.241
+
+
+[mywebservers: vars]
+myvar= value
+mywebpackonubuntu= apache2
+mywebpackonredhat=  httpd
