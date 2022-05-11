@@ -16,14 +16,14 @@
 
   - name: install webserver on redhat
     yum:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: present
     when: ansible_os_family=="RedHat"
 
 
   - name: start webserver on redhat
     service:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: started
     when: ansible_os_family=="RedHat"
   
