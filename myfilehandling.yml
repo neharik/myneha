@@ -28,5 +28,5 @@
 
   - name: i want to create folder
     file:
-    path: /home/ubuntu/myfolder
-    state: directory
+      path: /home/ubuntu/myfolder
+      state: directory
