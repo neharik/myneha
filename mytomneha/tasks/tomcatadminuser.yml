@@ -1,17 +1,15 @@
 ---
 - name: copy tomcat user xml file into node
   template:
-    src:  template/tomuser.j2
-    dest: /opt/tomcat/conf/tomcat-users.xml
+      src: templates/tomuser.j2
+      dest: /opt/tomcat/conf/tomcat-users.xml
 
-
-- name: copy tomcat context xml file in to nodes
+- name: copy tomcat context xml file into nodes
   template:
-     src: template/tomcontext.j2
+     src: templates/tomcontext.j2
      dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
-
-- name: copy tomcat context xml file in to nodes
+- name: copy tomcat hostcontext xml files into nodes
   template:
-     src: template/tomhostcontext.j2
-     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+     src: templates/tomhostcontext.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
