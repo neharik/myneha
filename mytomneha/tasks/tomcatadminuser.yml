@@ -9,8 +9,9 @@
   template:
      src: templates/tomcontext.j2
      dest: /opt/tomcat/webapps/manager/META-INF/context.xml
-
+  ignore_errors: yes
 - name: copy tomcat hostcontext xml files into nodes
   template:
      src: templates/tomhostcontext.j2
      dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+  ignore_errors: yes
