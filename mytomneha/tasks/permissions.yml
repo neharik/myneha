@@ -1,6 +1,6 @@
 ---
  - name: change owner as tomcat
-   cmd: sudo chown -R tomcat:tomcat /opt/tomcat/
+   command: sudo chown -R tomcat:tomcat /opt/tomcat/
 
  - name: make excute access on bin floder
-   cmd:  sudo chmod -R u+x /opt/tomcat/bin
+   command:  sudo chmod -R u+x /opt/tomcat/bin
