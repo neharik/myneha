@@ -1,8 +1,0 @@
----
-- name: addtomcatuser
-  user:
-    name: tomneha
-    home: /opt/tomcat
-    shell: /bin/false
-    state: present
-
