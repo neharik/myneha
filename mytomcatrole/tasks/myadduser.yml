@@ -1,0 +1,8 @@
+---
+- name: addtomcatuser
+  user:
+    name: tomcat
+    home: /opt/tomcat
+    shell: /bin/flase
+    state: present
+    
