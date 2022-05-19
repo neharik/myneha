@@ -1,5 +1,5 @@
 ---
-- hosts: myubuntuserver
+- hosts: git add -Amyapplicationserver
   become: yes
   roles:
   - {role: mytomcatrole, when: ansible_os_family="Debian"}
