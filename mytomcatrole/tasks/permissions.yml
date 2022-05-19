@@ -1,7 +1,0 @@
----
-- name: change owner as tom creates
-  command: sudo chown -R tomcat:tomcat /opt/tomcat/
-
-
-- name: mke excute access on bin floder
-  command: sudo chmod -R u+x /opt/tomcat/bin
