@@ -1,0 +1,17 @@
+---
+- name: copy tomcat admin userinto xml
+  template:
+     src: templates/tomuser.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: copy tomcat  context file
+  template:
+     src: templates/tomcontext.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+  
+- name: copy tomcat host context
+  template:
+     src: templates/tomhostcontext.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+  
+  
